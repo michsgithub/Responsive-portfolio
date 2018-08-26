@@ -1,28 +1,60 @@
 <!doctyp <!DOCTYPE html>
 <html>
+    <html lang="en-us">
 <head>
-    <meta charset="utf-8" />
-    <title>Contact</title>
-    <link rel="stylesheet" href="contact_style.css" />
-    <script src="main.js"></script>
+    <meta charset="UTF-8">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
-<div class="container">
-    <form action="action_page.php"
+    <!--Bootstrap navbar linked to index page itself and other 2 pages-->
+    <nav class="nav navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"> Michelle Chen </a>
+            </div>
+        
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="./index.html">About</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <label for="name">Enter Full Name </label>
-    <input type="text" id="name" name="fullname"
-    placeholder="Please enter your full name."
+    <div class="container">
+        <h3>Contact</h3>
+    </div>
 
-    <label for="number">Enter phone number </label>
-    <input type="number" id="phone" name="phoenumber"
-    placeholder="Please enter your phone number."
+    <div class="container">
+            <hr>
+    </div>
 
-    <label for="submit"> Please submit form </label>
-    <input type ="submit" value="Submit">
+    <div class="container">
+        <form action="mailto:michen914@yahoo.com method=POST enctype="text/plain">
 
-    </form>
+        <label for="name">Enter Name </label>
+        <input type="text" id="name" name="name" placeholder="enter your name.">
 
-</div>  
+        <label for="email">Enter Email</label>
+        <input type="text" id="email" name="email" placeholder="enter email.">
+
+        <label for="message">Enter Message</label>
+        <textarea type="text" id="message" name="message" placeholder="enter message." style="height:200px"></textarea>
+
+        <label for="submit"> </label>
+        <input type ="submit" value="Submit">
+
+        </form>
+
+    </div>  
+
+    <footer>
+        <div class="footer">
+            <p>copyright@</p>
+        </div>
+    </footer>
+
 </body>
 </html>
